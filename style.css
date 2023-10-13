@@ -1,0 +1,55 @@
+
+.container{
+    text-align: center;
+}
+
+#firstname{
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+
+#lastname{
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+#address{
+    height: 100px;
+    width:400px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+
+.table-header {
+    text-align: center;
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px;
+}
+
+/* Style for the table */
+.table-bordered {
+    border: 1px solid #ccc; 
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+
+.thead-dark th {
+    background-color: #333; 
+    color: #fff; 
+    border: 1px solid #fff; 
+    padding: 10px;
+}
+
+
+#table-body td {
+    border: 1px solid #ccc; 
+    padding: 10px;
+}
+
+
+

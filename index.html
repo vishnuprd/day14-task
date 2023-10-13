@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation With Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1 id="title">DOM Manipulation with Forms</h1>
+            <p id="description">This form contains the following fields: Please submit the data in the proper table below.</p>
+        </div>
+    </section>
+
+    <form id="form">
+        <!-- First name input -->
+        <div class="form-group">
+            <label for="first-name">First Name</label><br>
+            <input type="text" id="first-name" required placeholder="First Name">
+        </div>
+
+        <!-- Last name input -->
+        <div class="form-group">
+            <label for="last-name">Last Name</label><br>
+            <input type="text" id="last-name" required placeholder="Last Name">
+        </div>
+
+        <!-- Address textarea -->
+        <div class="form-group">
+            <label for="address">Address</label><br>
+            <textarea id="address" required placeholder="Enter your address"></textarea>
+        </div>
+
+        <!-- Pincode input -->
+        <div class="form-group">
+            <label for="pincode">Pincode</label><br>
+            <input type="text" id="pincode" required placeholder="Enter your pincode">
+        </div>
+
+        <!-- Gender radio buttons -->
+        <div class="form-group">
+            <h4>Gender</h4>
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="female" required> Female
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="other" required> Other
+            </label>
+        </div>
+
+        <!-- Food radio buttons -->
+        <div class="food">
+            <h4>Choice of Food: Please select at least two from the below</h4>
+            <label>
+                <input type="radio" name="food" value="southIndian" required> South Indian
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="food" value="chinese" required> Chinese
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="food" value="italian" required> Italian
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="food" value="american" required> American
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="food" value="french" required> French
+            </label>
+        </div>
+
+        <!-- State input -->
+        <div class="form-group">
+            <h4>State</h4>
+            <input type="text" id="state" required placeholder="Enter Your State here">
+        </div>
+
+        <!-- Country input -->
+        <div class="form-group">
+            <h4>Country</h4>
+            <input type="text" id="country" required placeholder="Enter Your Country here"><br>
+        </div>
+
+        <br>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        <button type="button" class="btn btn-primary" id="cancel" onclick="click()">Cancel</button><br>
+    </form>
+
+    <!-- Table Data -->
+    <div class="header table-header">
+        <h1 id="title">Table Data</h1>
+    </div>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+</body>
+</html>
